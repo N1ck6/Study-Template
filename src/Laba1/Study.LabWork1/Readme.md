@@ -12,8 +12,8 @@
   - [op_Inequality()](#M-Study-LabWork1-Features-Task1-Complex-op_Inequality-Study-LabWork1-Features-Task1-Complex,Study-LabWork1-Features-Task1-Complex- 'Study.LabWork1.Features.Task1.Complex.op_Inequality(Study.LabWork1.Features.Task1.Complex,Study.LabWork1.Features.Task1.Complex)')
   - [op_Multiply()](#M-Study-LabWork1-Features-Task1-Complex-op_Multiply-Study-LabWork1-Features-Task1-Complex,Study-LabWork1-Features-Task1-Complex- 'Study.LabWork1.Features.Task1.Complex.op_Multiply(Study.LabWork1.Features.Task1.Complex,Study.LabWork1.Features.Task1.Complex)')
   - [op_Subtraction()](#M-Study-LabWork1-Features-Task1-Complex-op_Subtraction-Study-LabWork1-Features-Task1-Complex,Study-LabWork1-Features-Task1-Complex- 'Study.LabWork1.Features.Task1.Complex.op_Subtraction(Study.LabWork1.Features.Task1.Complex,Study.LabWork1.Features.Task1.Complex)')
-  - [op_UnaryNegation(a)](#M-Study-LabWork1-Features-Task1-Complex-op_UnaryNegation-Study-LabWork1-Features-Task1-Complex- 'Study.LabWork1.Features.Task1.Complex.op_UnaryNegation(Study.LabWork1.Features.Task1.Complex)')
-  - [op_UnaryPlus(a)](#M-Study-LabWork1-Features-Task1-Complex-op_UnaryPlus-Study-LabWork1-Features-Task1-Complex- 'Study.LabWork1.Features.Task1.Complex.op_UnaryPlus(Study.LabWork1.Features.Task1.Complex)')
+  - [op_UnaryNegation()](#M-Study-LabWork1-Features-Task1-Complex-op_UnaryNegation-Study-LabWork1-Features-Task1-Complex- 'Study.LabWork1.Features.Task1.Complex.op_UnaryNegation(Study.LabWork1.Features.Task1.Complex)')
+  - [op_UnaryPlus()](#M-Study-LabWork1-Features-Task1-Complex-op_UnaryPlus-Study-LabWork1-Features-Task1-Complex- 'Study.LabWork1.Features.Task1.Complex.op_UnaryPlus(Study.LabWork1.Features.Task1.Complex)')
 - [IRunService](#T-Study-LabWork1-Shared-Abstractions-IRunService 'Study.LabWork1.Shared.Abstractions.IRunService')
   - [RunTask1()](#M-Study-LabWork1-Shared-Abstractions-IRunService-RunTask1 'Study.LabWork1.Shared.Abstractions.IRunService.RunTask1')
   - [RunTask2()](#M-Study-LabWork1-Shared-Abstractions-IRunService-RunTask2 'Study.LabWork1.Shared.Abstractions.IRunService.RunTask2')
@@ -22,9 +22,13 @@
   - [RUN_TASK_NUMBER](#F-Study-LabWork1-Program-RUN_TASK_NUMBER 'Study.LabWork1.Program.RUN_TASK_NUMBER')
   - [Main()](#M-Study-LabWork1-Program-Main 'Study.LabWork1.Program.Main')
 - [RunService](#T-Study-LabWork1-Shared-Services-RunService 'Study.LabWork1.Shared.Services.RunService')
+  - [BuildTree()](#M-Study-LabWork1-Shared-Services-RunService-BuildTree 'Study.LabWork1.Shared.Services.RunService.BuildTree')
   - [RunTask1()](#M-Study-LabWork1-Shared-Services-RunService-RunTask1 'Study.LabWork1.Shared.Services.RunService.RunTask1')
   - [RunTask2()](#M-Study-LabWork1-Shared-Services-RunService-RunTask2 'Study.LabWork1.Shared.Services.RunService.RunTask2')
   - [RunTask3()](#M-Study-LabWork1-Shared-Services-RunService-RunTask3 'Study.LabWork1.Shared.Services.RunService.RunTask3')
+- [TreeNode\`1](#T-Study-LabWork1-Features-Task3-TreeNode`1 'Study.LabWork1.Features.Task3.TreeNode`1')
+  - [AddChild()](#M-Study-LabWork1-Features-Task3-TreeNode`1-AddChild-`0- 'Study.LabWork1.Features.Task3.TreeNode`1.AddChild(`0)')
+  - [PrintChildrenValues(level)](#M-Study-LabWork1-Features-Task3-TreeNode`1-PrintChildrenValues-System-Int32- 'Study.LabWork1.Features.Task3.TreeNode`1.PrintChildrenValues(System.Int32)')
 
 <a name='T-Study-LabWork1-Features-Task1-Complex'></a>
 ## Complex `type`
@@ -50,7 +54,6 @@ This constructor has no parameters.
 ##### Summary
 
 Строковое представление комплексного числа
-Форматы: "1.01 + 2.00i", "3.00", "4.00i"
 
 ##### Parameters
 
@@ -72,7 +75,7 @@ This method has no parameters.
 
 ##### Summary
 
-Деление комплексных чисел: (a+bi)/(c+di) = ((ac+bd)/(c²+d²)) + ((bc-ad)/(c²+d²))i
+Деление комплексных чисел
 
 ##### Parameters
 
@@ -105,7 +108,7 @@ This method has no parameters.
 
 ##### Summary
 
-Умножение комплексных чисел: (a+bi)*(c+di) = (ac-bd) + (ad+bc)i
+Умножение комплексных чисел
 
 ##### Parameters
 
@@ -123,38 +126,26 @@ This method has no parameters.
 This method has no parameters.
 
 <a name='M-Study-LabWork1-Features-Task1-Complex-op_UnaryNegation-Study-LabWork1-Features-Task1-Complex-'></a>
-### op_UnaryNegation(a) `method`
+### op_UnaryNegation() `method`
 
 ##### Summary
 
 Унарный минус - получение сопряженного комплексного числа
 
-##### Returns
-
-Сопряженное комплексное число
-
 ##### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| a | [Study.LabWork1.Features.Task1.Complex](#T-Study-LabWork1-Features-Task1-Complex 'Study.LabWork1.Features.Task1.Complex') | Комплексное число |
+This method has no parameters.
 
 <a name='M-Study-LabWork1-Features-Task1-Complex-op_UnaryPlus-Study-LabWork1-Features-Task1-Complex-'></a>
-### op_UnaryPlus(a) `method`
+### op_UnaryPlus() `method`
 
 ##### Summary
 
 Унарный плюс - вычисление модуля комплексного числа
 
-##### Returns
-
-Модуль числа (длина вектора)
-
 ##### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| a | [Study.LabWork1.Features.Task1.Complex](#T-Study-LabWork1-Features-Task1-Complex 'Study.LabWork1.Features.Task1.Complex') | Комплексное число |
+This method has no parameters.
 
 <a name='T-Study-LabWork1-Shared-Abstractions-IRunService'></a>
 ## IRunService `type`
@@ -240,6 +231,17 @@ Study.LabWork1.Shared.Services
 
 Реализация заданий Л/Р
 
+<a name='M-Study-LabWork1-Shared-Services-RunService-BuildTree'></a>
+### BuildTree() `method`
+
+##### Summary
+
+Построение конфигурации дерева
+
+##### Parameters
+
+This method has no parameters.
+
 <a name='M-Study-LabWork1-Shared-Services-RunService-RunTask1'></a>
 ### RunTask1() `method`
 
@@ -272,3 +274,45 @@ This method has no parameters.
 ##### Parameters
 
 This method has no parameters.
+
+<a name='T-Study-LabWork1-Features-Task3-TreeNode`1'></a>
+## TreeNode\`1 `type`
+
+##### Namespace
+
+Study.LabWork1.Features.Task3
+
+##### Summary
+
+Узел дерева, который может иметь потомков
+
+##### Generic Types
+
+| Name | Description |
+| ---- | ----------- |
+| T | Тип значения, хранимого в узле |
+
+<a name='M-Study-LabWork1-Features-Task3-TreeNode`1-AddChild-`0-'></a>
+### AddChild() `method`
+
+##### Summary
+
+Добавить дочерний узел по значению
+
+##### Parameters
+
+This method has no parameters.
+
+<a name='M-Study-LabWork1-Features-Task3-TreeNode`1-PrintChildrenValues-System-Int32-'></a>
+### PrintChildrenValues(level) `method`
+
+##### Summary
+
+Рекурсивная функция для вывода значений всех потомков
+Выводит значение текущего узла и рекурсивно вызывает себя для всех детей
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| level | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | Уровень вложенности (для форматирования отступов) |

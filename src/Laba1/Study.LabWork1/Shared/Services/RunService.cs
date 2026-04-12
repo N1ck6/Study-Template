@@ -1,5 +1,6 @@
 using Study.LabWork1.Shared.Abstractions;
 using Study.LabWork1.Features.Task1;
+using Study.LabWork1.Features.Task3;
 
 namespace Study.LabWork1.Shared.Services
 {
@@ -71,6 +72,53 @@ namespace Study.LabWork1.Shared.Services
         /// <summary>
         /// Задание 3
         /// </summary>
-        public void RunTask3() => throw new NotImplementedException();
+        public void RunTask3()
+        {
+            
+
+            
+            var root = BuildTree();
+ 
+           
+            root.PrintChildrenValues();
+
+            
+        }
+
+        /// <summary>
+        /// Построение конфигурации дерева
+        /// </summary>
+        private TreeNode<string> BuildTree()
+        {
+            
+            var root = new TreeNode<string>("Root");
+
+           
+            var child1 = root.AddChild("Node 1");
+            var child2 = root.AddChild("Node 2");
+            var child3 = root.AddChild("Node 3");
+
+            
+            child1.AddChild("Node 1.1");
+            var child12 = child1.AddChild("Node 1.2");
+            child1.AddChild("Node 1.3");
+
+            child12.AddChild("Node 1.2.1");
+            child12.AddChild("Node 1.2.2");
+
+            child2.AddChild("Node 2.1");
+            var child22 = child2.AddChild("Node 2.2");
+
+           
+            child22.AddChild("Node 2.2.1");
+            child22.AddChild("Node 2.2.2");
+            child22.AddChild("Node 2.2.3");
+
+            
+            child3.AddChild("Node 3.1");
+            child3.AddChild("Node 3.2");
+
+            return root;
+        }
     }
 }
