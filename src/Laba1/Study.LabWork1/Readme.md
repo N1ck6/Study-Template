@@ -3,6 +3,7 @@
 
 ## Contents
 
+<<<<<<< HEAD
 - [Complex](#T-Study-LabWork1-Features-Task1-Complex 'Study.LabWork1.Features.Task1.Complex')
   - [#ctor()](#M-Study-LabWork1-Features-Task1-Complex-#ctor-System-Double,System-Double- 'Study.LabWork1.Features.Task1.Complex.#ctor(System.Double,System.Double)')
   - [ToString()](#M-Study-LabWork1-Features-Task1-Complex-ToString 'Study.LabWork1.Features.Task1.Complex.ToString')
@@ -190,6 +191,11 @@ This method has no parameters.
 ##### Parameters
 
 This method has no parameters.
+=======
+- [Program](#T-Study-LabWork1-Program 'Study.LabWork1.Program')
+  - [RUN_TASK_NUMBER](#F-Study-LabWork1-Program-RUN_TASK_NUMBER 'Study.LabWork1.Program.RUN_TASK_NUMBER')
+  - [Main()](#M-Study-LabWork1-Program-Main 'Study.LabWork1.Program.Main')
+>>>>>>> parent of 75664c8 (Задание 1 Лаба 1 Написал класс для комплексных чисел)
 
 <a name='T-Study-LabWork1-Program'></a>
 ## Program `type`
@@ -219,6 +225,7 @@ Study.LabWork1
 ##### Parameters
 
 This method has no parameters.
+<<<<<<< HEAD
 
 <a name='T-Study-LabWork1-Shared-Services-RunService'></a>
 ## RunService `type`
@@ -316,3 +323,5 @@ This method has no parameters.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | level | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | Уровень вложенности (для форматирования отступов) |
+=======
+>>>>>>> parent of 75664c8 (Задание 1 Лаба 1 Написал класс для комплексных чисел)

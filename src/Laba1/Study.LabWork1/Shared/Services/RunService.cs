@@ -1,28 +1,28 @@
 using Study.LabWork1.Shared.Abstractions;
+<<<<<<< HEAD
 using Study.LabWork1.Features.Task1;
 using Study.LabWork1.Features.Task3;
+=======
+>>>>>>> parent of 75664c8 (Задание 1 Лаба 1 Написал класс для комплексных чисел)
 
-namespace Study.LabWork1.Shared.Services
+namespace Study.LabWork1.Shared.Services;
+
+/// <summary>
+/// Реализация заданий Л/Р
+/// </summary>
+public class RunService : IRunService
 {
     /// <summary>
-    /// Реализация заданий Л/Р
+    /// Задание 1
     /// </summary>
-    public class RunService : IRunService
-    {
-        /// <summary>
-        /// Задание 1 - Комплексные числа
-        /// </summary>
-        public void RunTask1()
-        {
-            Console.WriteLine("=== Лабораторная работа №1: Комплексные числа ===\n");
+    public void RunTask1() => throw new NotImplementedException();
 
-            // Демонстрация создания чисел
-            var c1 = new Complex(3, 4);
-            var c2 = new Complex(1, -2);
-            var c3 = new Complex(5, 0);
-            var c4 = new Complex(0, 6);
-            var c5 = new Complex();
+    /// <summary>
+    /// Задание 2
+    /// </summary>
+    public void RunTask2() => throw new NotImplementedException();
 
+<<<<<<< HEAD
             Console.WriteLine("Созданные комплексные числа:");
             Console.WriteLine($"c1 = {c1}");
             Console.WriteLine($"c2 = {c2}");
@@ -121,4 +121,10 @@ namespace Study.LabWork1.Shared.Services
             return root;
         }
     }
+=======
+    /// <summary>
+    /// Задание 3
+    /// </summary>
+    public void RunTask3() => throw new NotImplementedException();
+>>>>>>> parent of 75664c8 (Задание 1 Лаба 1 Написал класс для комплексных чисел)
 }
