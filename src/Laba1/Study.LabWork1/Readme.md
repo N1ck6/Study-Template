@@ -59,30 +59,34 @@ This method has no parameters.
 
 This method has no parameters.
 
-<a name='T-Study-LabWork1-Program'></a>
-## Program `type`
+<a name='T-Study-LabWork1-Shared-Abstractions-IRunService'></a>
+## IRunService `type`
 
 ##### Namespace
 
-Study.LabWork1
+Study.LabWork1.Shared.Abstractions
 
 ##### Summary
 
-Начальная точка входа
+Интерфейс для реализации заданий Л/Р
 
-<a name='F-Study-LabWork1-Program-RUN_TASK_NUMBER'></a>
-### RUN_TASK_NUMBER `constants`
-
-##### Summary
-
-Номер выполняемой задачи
-
-<a name='M-Study-LabWork1-Program-Main'></a>
-### Main() `method`
+<a name='M-Study-LabWork1-Shared-Abstractions-IRunService-RunTask1'></a>
+### RunTask1() `method`
 
 ##### Summary
 
-Старт программы
+Запуск выполнения задания 1
+
+##### Parameters
+
+This method has no parameters.
+
+<a name='M-Study-LabWork1-Shared-Abstractions-IRunService-RunTask2'></a>
+### RunTask2() `method`
+
+##### Summary
+
+Запуск выполнения задания 2
 
 ##### Parameters
 
