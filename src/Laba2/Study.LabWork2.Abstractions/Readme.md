@@ -4,9 +4,9 @@
 ## Contents
 
 - [ExecutionResultDto\`1](#T-Study-LabWork2-Abstractions-Feature-Task2-DtoModels-ExecutionResultDto`1 'Study.LabWork2.Abstractions.Feature.Task2.DtoModels.ExecutionResultDto`1')
-  - [FailedRequests](#P-Study-LabWork2-Abstractions-Feature-Task2-DtoModels-ExecutionResultDto`1-FailedRequests 'Study.LabWork2.Abstractions.Feature.Task2.DtoModels.ExecutionResultDto`1.FailedRequests')
+  - [FailedRequest](#P-Study-LabWork2-Abstractions-Feature-Task2-DtoModels-ExecutionResultDto`1-FailedRequest 'Study.LabWork2.Abstractions.Feature.Task2.DtoModels.ExecutionResultDto`1.FailedRequest')
   - [Responses](#P-Study-LabWork2-Abstractions-Feature-Task2-DtoModels-ExecutionResultDto`1-Responses 'Study.LabWork2.Abstractions.Feature.Task2.DtoModels.ExecutionResultDto`1.Responses')
-  - [SuccessfulRequests](#P-Study-LabWork2-Abstractions-Feature-Task2-DtoModels-ExecutionResultDto`1-SuccessfulRequests 'Study.LabWork2.Abstractions.Feature.Task2.DtoModels.ExecutionResultDto`1.SuccessfulRequests')
+  - [SuccessfulRequest](#P-Study-LabWork2-Abstractions-Feature-Task2-DtoModels-ExecutionResultDto`1-SuccessfulRequest 'Study.LabWork2.Abstractions.Feature.Task2.DtoModels.ExecutionResultDto`1.SuccessfulRequest')
   - [TotalExecutionTime](#P-Study-LabWork2-Abstractions-Feature-Task2-DtoModels-ExecutionResultDto`1-TotalExecutionTime 'Study.LabWork2.Abstractions.Feature.Task2.DtoModels.ExecutionResultDto`1.TotalExecutionTime')
   - [Version](#P-Study-LabWork2-Abstractions-Feature-Task2-DtoModels-ExecutionResultDto`1-Version 'Study.LabWork2.Abstractions.Feature.Task2.DtoModels.ExecutionResultDto`1.Version')
 - [INumberSetProcessor](#T-Study-LabWork2-Abstractions-Feature-Task1-SubTask2-INumberSetProcessor 'Study.LabWork2.Abstractions.Feature.Task1.SubTask2.INumberSetProcessor')
@@ -35,6 +35,7 @@
   - [ProcessedSetsCount](#P-Study-LabWork2-Abstractions-Feature-Task1-SubTask2-DtoModels-ProcessingResultDto-ProcessedSetsCount 'Study.LabWork2.Abstractions.Feature.Task1.SubTask2.DtoModels.ProcessingResultDto.ProcessedSetsCount')
   - [Results](#P-Study-LabWork2-Abstractions-Feature-Task1-SubTask2-DtoModels-ProcessingResultDto-Results 'Study.LabWork2.Abstractions.Feature.Task1.SubTask2.DtoModels.ProcessingResultDto.Results')
   - [TotalSum](#P-Study-LabWork2-Abstractions-Feature-Task1-SubTask2-DtoModels-ProcessingResultDto-TotalSum 'Study.LabWork2.Abstractions.Feature.Task1.SubTask2.DtoModels.ProcessingResultDto.TotalSum')
+- [RequestService](#T-Study-LabWork2-Feature-Task2-RequestService 'Study.LabWork2.Feature.Task2.RequestService')
 - [ResultEntryDto](#T-Study-LabWork2-Abstractions-Feature-Task1-SubTask2-DtoModels-ResultEntryDto 'Study.LabWork2.Abstractions.Feature.Task1.SubTask2.DtoModels.ResultEntryDto')
   - [SetNumber](#P-Study-LabWork2-Abstractions-Feature-Task1-SubTask2-DtoModels-ResultEntryDto-SetNumber 'Study.LabWork2.Abstractions.Feature.Task1.SubTask2.DtoModels.ResultEntryDto.SetNumber')
   - [Sum](#P-Study-LabWork2-Abstractions-Feature-Task1-SubTask2-DtoModels-ResultEntryDto-Sum 'Study.LabWork2.Abstractions.Feature.Task1.SubTask2.DtoModels.ResultEntryDto.Sum')
@@ -61,12 +62,12 @@ Study.LabWork2.Abstractions.Feature.Task2.DtoModels
 
 Представляет результат выполнения всех запросов к серверам
 
-<a name='P-Study-LabWork2-Abstractions-Feature-Task2-DtoModels-ExecutionResultDto`1-FailedRequests'></a>
-### FailedRequests `property`
+<a name='P-Study-LabWork2-Abstractions-Feature-Task2-DtoModels-ExecutionResultDto`1-FailedRequest'></a>
+### FailedRequest `property`
 
 ##### Summary
 
-Количество неудачных запросов (ошибки сети, таймауты, HTTP ошибки)
+Неудачный запрос (ошибки сети, таймауты, HTTP ошибки)
 
 <a name='P-Study-LabWork2-Abstractions-Feature-Task2-DtoModels-ExecutionResultDto`1-Responses'></a>
 ### Responses `property`
@@ -75,12 +76,12 @@ Study.LabWork2.Abstractions.Feature.Task2.DtoModels
 
 Список ответов от серверов
 
-<a name='P-Study-LabWork2-Abstractions-Feature-Task2-DtoModels-ExecutionResultDto`1-SuccessfulRequests'></a>
-### SuccessfulRequests `property`
+<a name='P-Study-LabWork2-Abstractions-Feature-Task2-DtoModels-ExecutionResultDto`1-SuccessfulRequest'></a>
+### SuccessfulRequest `property`
 
 ##### Summary
 
-Количество успешных запросов (HTTP статус 2xx)
+Успешный запрос (HTTP статус 2xx)
 
 <a name='P-Study-LabWork2-Abstractions-Feature-Task2-DtoModels-ExecutionResultDto`1-TotalExecutionTime'></a>
 ### TotalExecutionTime `property`
@@ -423,6 +424,17 @@ Study.LabWork2.Abstractions.Feature.Task1.SubTask2.DtoModels
 ##### Summary
 
 Общая сумма всех наборов
+
+<a name='T-Study-LabWork2-Feature-Task2-RequestService'></a>
+## RequestService `type`
+
+##### Namespace
+
+Study.LabWork2.Feature.Task2
+
+##### Summary
+
+Интерфейс для реализации методов опроса другого сервиса
 
 <a name='T-Study-LabWork2-Abstractions-Feature-Task1-SubTask2-DtoModels-ResultEntryDto'></a>
 ## ResultEntryDto `type`
