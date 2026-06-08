@@ -9,13 +9,8 @@ public static class Program
 {
     /// <summary>
     /// Номер выполняемой задачи
-<<<<<<< task-3
     /// </summary>
     private const int RUN_TASK_NUMBER = 3;
-
-=======
-    /// </summary
->>>>>>> main
     /// <summary>
     /// Старт программы
     /// </summary>
@@ -42,4 +37,3 @@ public static class Program
         }
     }
 }
-//
