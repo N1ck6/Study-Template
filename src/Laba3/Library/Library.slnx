@@ -1,0 +1,10 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="../Logic/Logic.csproj" />
+  <Project Path="../Storage/Storage.csproj" />
+  <Project Path="../WebAPI/WebAPI.csproj" Id="647a882a-282f-4926-91ec-d822b6394d9a" />
+</Solution>
